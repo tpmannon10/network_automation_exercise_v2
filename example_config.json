@@ -1,0 +1,27 @@
+{
+  "dhcp": {
+    "reservations": [
+      {"hostname": "device1", "mac": "00:11:22:33:44:55", "ip": "192.168.1.10"},
+      {"hostname": "device2", "mac": "00:11:22:33:44:66", "ip": "192.168.1.11"}
+    ]
+  },
+  "dns": {
+    "primary": "8.8.8.8",
+    "secondary": "8.8.4.4"
+  },
+  "vlans": [
+    {"id": 10, "name": "VLAN10", "ip_range": "192.168.10.0/24"},
+    {"id": 20, "name": "VLAN20", "ip_range": "192.168.20.0/24"}
+  ],
+  "firewall": {
+    "rules": [
+      {"id": 1, "action": "allow", "source": "any", "destination": "any", "protocol": "tcp", "port": 22},
+      {"id": 2, "action": "deny", "source": "any", "destination": "any", "protocol": "icmp"}
+    ]
+  },
+  "routing": {
+    "static_routes": [
+      {"destination": "0.0.0.0/0", "gateway": "192.168.1.1"}
+    ]
+  }
+}
