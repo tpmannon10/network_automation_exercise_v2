@@ -3,7 +3,7 @@ import requests
 from typing import List, Dict, Any
 
 
-# Simulated function to fetch configuration files from a cloud server (API call)
+# Simulated function to fetch configuration files from a cloud server (API call)2
 def fetch_configuration_from_cloud(api_url: str) -> Dict[str, Any]:
     try:
         # Simulating an API response by reading from a local JSON file
